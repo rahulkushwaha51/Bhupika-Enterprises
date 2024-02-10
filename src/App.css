@@ -17,9 +17,6 @@ html {
 
 body {
   background-color: rgba(253, 250, 250, 0.929);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   color: rgb(17, 13, 13);
   font-family: 'Playpen Sans', cursive;
   isolation: isolate;
@@ -41,4 +38,12 @@ body::after {
 }
 ::-webkit-scrollbar{
   display: none;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  color: var(--color-secondry);
 }
