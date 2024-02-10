@@ -16,11 +16,10 @@ html {
 }
 
 body {
-  background-color: rgba(253, 250, 250, 0.929);
-  color: rgb(17, 13, 13);
+  background-color: var(--color-primary);
+  color: var(--color-secondry);
   font-family: 'Playpen Sans', cursive;
-  isolation: isolate;
-  /* position: relative; */
+  /* font-family: sans-serif; */
 }
 
 body::after {
@@ -46,4 +45,5 @@ li{
 
 a{
   color: var(--color-secondry);
+  font-weight: bolder;
 }

@@ -9,6 +9,8 @@ header {
     display: flex;
     gap: 3rem;
     align-items: center;
+
+    z-index: 1;
 }
 
 .logo {
@@ -43,10 +45,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+
 }
 
-
+a b {
+    padding: 0 0.5rem;
+}
 
 .link a:hover {
     cursor: pointer;
@@ -56,11 +60,11 @@ header {
 .submenu {
     position: absolute;
     left: 0;
-    top: 2.7rem;
+    top: 3rem;
     min-width: 200px;
-    padding: 0.5rem 0;
+    background-color: var(--color-primary);
     box-shadow: 2px 4px 8px white;
-    border-top: 3px solid skyblue;
+    border-top: 2px solid skyblue;
     display: none;
     z-index: 10;
 }
@@ -85,11 +89,13 @@ header {
     position: relative;
     width: 100%;
     padding: 0.5rem 0;
-    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+    border-top: 1px solid rgb(0, 0, 0, 0.2);
 }
-.sublink a{
+
+.sublink a {
     color: rgba(0, 0, 0, .6);
 }
+
 .submenu li a {
     font-weight: 200;
 }
@@ -99,8 +105,9 @@ header {
     top: 0;
     left: 200px;
     min-width: 200px;
+    background-color: var(--color-primary);
     box-shadow: 2px 4px 8px white;
-    border-top: 3px solid skyblue;
+    border-top: 2px solid skyblue;
     display: none;
     z-index: 1;
 }
@@ -108,13 +115,14 @@ header {
 .nested-sublink {
     position: relative;
     width: 100%;
-    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+    padding: 0.5rem 0;
+    border-top: 1px solid rgb(0, 0, 0, 0.2);
 }
 
 @media (max-width:720px) {
 
     header {
-        padding: 0.5rem 1rem;
+        padding: 0;
         display: block;
     }
 
@@ -140,7 +148,7 @@ header {
 
     .link {
         width: 100%;
-        border-bottom: 1px solid rgba(191, 184, 184, 0.438);
+        border-top: 1px solid rgba(191, 184, 184, 0.438);
     }
 
     .link:not(:hover) .submenu {
@@ -148,12 +156,14 @@ header {
     }
 
     .link a {
-        padding: 0.3rem 0;
+        padding: 0.3rem 1rem;
     }
+
     a b {
         transform: rotate(360deg);
         font-size: 12px;
     }
+
     .submenu {
         position: relative;
         width: 100%;
@@ -162,12 +172,15 @@ header {
         padding: 0;
         border-top: none;
     }
-    .sublink{
+
+    .sublink {
         padding: 0;
+        border-bottom: 1px solid rgb(0, 0, 0, 0.2);
     }
-    .sublink a{
-        font-size:medium;
-        color:rgba(0, 0, 0, 0.604) ;
+
+    .sublink a {
+        font-size: medium;
+        color: rgba(0, 0, 0, 0.604);
     }
 
     .nested-submenu {
@@ -175,6 +188,10 @@ header {
         width: 100%;
         left: 0;
         border-top: none;
+    }
+
+    .nested-sublink {
+        border-bottom: 1px solid rgb(0, 0, 0, 0.2);
     }
 
     .togglemenu {

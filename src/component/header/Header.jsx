@@ -20,8 +20,8 @@ const Navbar = () => {
         },
         {
             id: 2,
-            link: "About Us",
-            path: "/",
+            link: "Clients",
+            path: "/client",
         },
         {
             id: 3,
@@ -78,7 +78,7 @@ const Navbar = () => {
     return (
         <header>
             <div className="logo">
-                <img src={logo} alt="BHUPIKA ENTERPRISES" />
+                <Link to='/'>  <img src={logo} alt="BHUPIKA ENTERPRISES" /></Link>
             </div>
             <div
                 className={`togglemenu ${active ? "active" : ""}`}
