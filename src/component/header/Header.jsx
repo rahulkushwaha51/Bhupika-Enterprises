@@ -77,9 +77,9 @@ const Navbar = () => {
 
     return (
         <header>
-            <div className="logo">
-                <Link to='/'>  <img src={logo} alt="BHUPIKA ENTERPRISES" /></Link>
-            </div>
+           <div className="logo">
+                <Link to='/'> <img src={logo} alt="BHUPIKA ENTERPRISES" /></Link>
+            </div> 
             <div
                 className={`togglemenu ${active ? "active" : ""}`}
                 onClick={toggleMenu}
@@ -89,7 +89,7 @@ const Navbar = () => {
                     {links.map(({ id, link, path, subLinks }) => (
                         <li key={id} className="link">
                             <Link to={path}>{link} {subLinks && <b> ▼</b>}</Link>
-                            {subLinks && (
+                         {subLinks && (
                                 <ul className="submenu">
                                     {subLinks.map(
                                         ({
@@ -100,7 +100,7 @@ const Navbar = () => {
                                         }) => (
                                             <li key={subId} className="sublink">
                                                 <Link to={subPath}>{subLink} {nestedSubLinks && <b> ▼</b>}</Link>
-                                                {nestedSubLinks && (
+                                                  {nestedSubLinks && (
                                                     <ul className="nested-submenu">
                                                         {nestedSubLinks.map(
                                                             ({
