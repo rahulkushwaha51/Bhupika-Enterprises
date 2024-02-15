@@ -16,34 +16,32 @@ html {
 }
 
 body {
-  background-color: var(--color-primary);
-  color: var(--color-secondry);
-  font-family: 'Playpen Sans', cursive;
-  /* font-family: sans-serif; */
+  background-color: var(--background-color-primary);
+  color: var(--color-primary);
+  font-family: sans-serif;
+  line-height: 1.5rem;
+  padding: 0;
 }
 
-body::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-color: var(--color-primary);
-  color: var(--color-secondry);
+:root {
+  --background-color-primary: rgb(255, 255, 255);
+  --color-primary: rgb(0, 0, 0);
+  --color-secondry: rgb(12, 218, 211);
 }
 
-:root{
---color-primary:white;
---color-secondry:black;
-}
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
 
-li{
+li {
   list-style: none;
 }
 
-a{
-  color: var(--color-secondry);
-  font-weight: bolder;
+a {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+p {
+  line-height: 1.5rem;
 }

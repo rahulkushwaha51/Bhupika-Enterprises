@@ -36,11 +36,6 @@ const ImageSlider = () => {
           <button onClick={() => showPrevious()} className='slider-btn' style={{ left: 0 }}><ArrowBigLeft /></button>
           <button onClick={() => showNext()} className='slider-btn' style={{ right: 0 }}><ArrowBigRight /></button>
         </div>
-        <div className='slider-dot'>
-          {images.map((_, index) => (
-            <button onClick={() => setCurrentIndex(index)} className='slider-dot-btn'>{index === currentIndex ? <CircleDot /> : <Circle />}</button>
-          ))}
-        </div>
       </div>
     </>
   )

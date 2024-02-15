@@ -1,0 +1,81 @@
+.company-profile {
+    padding-bottom: 1rem;
+}
+
+.img {
+    object-fit: cover;
+    width: 100%;
+    height: 25rem;
+    padding: 0 4rem;
+}
+
+.company-profile h1 {
+    text-align: center;
+    padding: 1.5rem 0;
+
+}
+
+.company-details {
+    width: 75%;
+    margin: auto;
+}
+
+.text {
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    margin: auto;
+}
+
+.subtext {
+    width: 70%;
+}
+
+.subtext p {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.purpose {
+    background-image: url('../../assets/aim.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 23rem;
+    height: 18.5rem;
+    padding-top: 4.2rem;
+    padding-left: 2.2rem;
+    margin-top: -1.8rem;
+    object-fit: contain;
+}
+
+.purpose p {
+    padding-top: 0.8rem;
+    padding-right: 1rem;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.1rem;
+    overflow-wrap: break-word;
+}
+
+@media (max-width:720px) {
+    .img {
+        padding: 0;
+        height: 10rem;
+    }
+    .company-details{
+        width: 100%;
+        padding: 0 1rem;
+    }
+    .text{
+        display: block;
+    }
+    .subtext{
+        width: 100%;
+    }
+    .purpose{
+        margin: auto;
+        height: 20rem;
+        width: 23rem;
+        padding-top: 5rem;
+    }
+}

@@ -1,0 +1,41 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+    gap: 1rem;
+    border-top: 1px solid black;
+}
+
+.footer img{
+    width: 10rem;
+}
+.copyright {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: var(--color-secondry);
+    color: white;
+}
+
+.business {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.business li{
+    padding: 0.1rem;
+}
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.quick-links li {
+    padding: 0.1rem ;
+}
+
+@media (max-width:540px) {
+    .footer {
+        flex-direction: column;
+    }
+}

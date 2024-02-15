@@ -1,42 +1,7 @@
 .home {
+  min-height: 100vh;
+  width: 100%;
   position: relative;
   border-radius: 0.5rem;
   text-align: center;
-}
-
-.info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-h2,
-h3 {
-  margin: 0.2rem;
-}
-
-p {
-  max-width: 75ch;
-  white-space: wrap;
-
-}
-
-.profile img {
-  width: 15rem;
-  height: 20rem;
-  border-radius: 2rem;
-  object-fit: cover;
-  margin: 1rem;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 768px) {
-  .info {
-    flex-direction: column;
-  }
-
-  .profile img {
-    width: 95%;
-    height: inherit;
-  }
 }

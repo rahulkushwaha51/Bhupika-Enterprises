@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
-import logo from '../../../public/logo.svg'
-const Navbar = () => {
+import logo from '../../assets/logo.svg'
+const Header = () => {
     const [active, setActive] = useState(false);
     const links = [
 
@@ -13,7 +13,7 @@ const Navbar = () => {
                 {
                     id: 21,
                     link: "Company Profile",
-                    path: "/company-profile"
+                    path: "/profile"
                 },
                 { id: 22, link: "Leadership", path: "/leadership" },
             ],
@@ -27,18 +27,18 @@ const Navbar = () => {
             id: 3,
             link: "Services",
             subLinks: [
-                { id: 31, link: "Workforce Management", path: "/service1" },
+                { id: 31, link: "Workforce Management", path: "/workforce" },
                 {
-                    id: 32, link: "Operating Asset Management", path: "/service2", subLinks: [
+                    id: 32, link: "Operating Asset Management", subLinks: [
                         {
                             id: 321,
                             link: "Security services",
-                            path: "/",
+                            path: "/security",
                         },
                         {
                             id: 322,
                             link: "Construction",
-                            path: "/",
+                            path: "/construction",
                         },
                         {
                             id: 323,
@@ -77,9 +77,9 @@ const Navbar = () => {
 
     return (
         <header>
-            <div className="logo">
-                <Link to='/'>  <img src={logo} alt="BHUPIKA ENTERPRISES" /></Link>
-            </div>
+           <div className="logo">
+                <Link to='/'> <img src={logo} alt="BHUPIKA ENTERPRISES" /></Link>
+            </div> 
             <div
                 className={`togglemenu ${active ? "active" : ""}`}
                 onClick={toggleMenu}
@@ -89,7 +89,7 @@ const Navbar = () => {
                     {links.map(({ id, link, path, subLinks }) => (
                         <li key={id} className="link">
                             <Link to={path}>{link} {subLinks && <b> ▼</b>}</Link>
-                            {subLinks && (
+                         {subLinks && (
                                 <ul className="submenu">
                                     {subLinks.map(
                                         ({
@@ -100,7 +100,7 @@ const Navbar = () => {
                                         }) => (
                                             <li key={subId} className="sublink">
                                                 <Link to={subPath}>{subLink} {nestedSubLinks && <b> ▼</b>}</Link>
-                                                {nestedSubLinks && (
+                                                  {nestedSubLinks && (
                                                     <ul className="nested-submenu">
                                                         {nestedSubLinks.map(
                                                             ({
@@ -133,4 +133,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default Header;

@@ -1,0 +1,34 @@
+.leadership {
+    min-height: 100vh;
+    width: 50%;
+    padding: 2rem;
+    margin: auto;
+}
+
+.leadership h1{
+    text-align: center;
+}
+.leaders-details{
+    padding: 1rem 0;
+    /* text-align: center; */
+}
+.leaders-details h2{
+    padding: 1rem 0;
+}
+.leaders-details img{
+    width: 10rem;
+    height: 10rem;
+    /* padding: 0.5rem 0; */
+}
+
+@media (max-width:720px){
+    .leadership{
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+    .leaders-details{
+        padding: 1rem 0;
+        text-align: center;
+    }
+}
+
