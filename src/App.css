@@ -16,16 +16,24 @@ html {
 }
 
 body {
-  background-color:var(--background-color-primary);
+  background-color: var(--color-primary);
   color: var(--color-secondry);
-  font-family:serif;
-  padding: 0;
+  font-family: 'Playpen Sans', cursive;
+  /* font-family: sans-serif; */
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: var(--color-primary);
+  color: var(--color-secondry);
 }
 
 :root{
---background-color-primary:rgb(255, 255, 255);
---color-primary:rgb(0, 0, 0);
---color-secondry:rgb(78, 161, 211);
+--color-primary:white;
+--color-secondry:black;
 }
 ::-webkit-scrollbar{
   display: none;
@@ -34,10 +42,8 @@ body {
 li{
   list-style: none;
 }
+
 a{
-color: var(--color-primary);
-cursor: pointer;
-}
-a:hover{
   color: var(--color-secondry);
+  font-weight: bolder;
 }
