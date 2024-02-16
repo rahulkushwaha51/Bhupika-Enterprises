@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
-import img1 from '../../assets/ghost.jpg'
-import img2 from '../../assets/moon-knight.jpg'
-import img3 from '../../assets/mortal-kombat.jpg'
-import img4 from '../../assets/skull.jpg'
+import img1 from '../../assets/Company.png'
+import img2 from '../../assets/property.jpg'
+import img3 from '../../assets/construction.jpg'
+import img4 from '../../assets/workforce.jpg'
 import "./ImageSlider.css"
-import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from 'lucide-react'
+import { ArrowBigLeft, ArrowBigRight} from 'lucide-react'
 const ImageSlider = () => {
   let images = [img1, img2, img3, img4];
 

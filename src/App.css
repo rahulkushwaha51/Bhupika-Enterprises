@@ -41,7 +41,9 @@ a {
   color: var(--color-primary);
   cursor: pointer;
 }
-
+h1{
+  text-align: center;
+}
 p {
   line-height: 1.5rem;
 }

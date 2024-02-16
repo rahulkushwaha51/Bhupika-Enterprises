@@ -1,0 +1,55 @@
+.security {
+    width: 50%;
+    margin: auto;
+    padding: 2rem;
+    /* text-align: center; */
+}
+
+.services {
+    padding: 1rem 0 0.5rem 0;
+}
+
+.service {
+    padding: 0.2rem 0;
+}
+
+.service h3 {
+    padding: 0.2rem 0;
+}
+
+.features ul {
+    padding: 0.5rem 0;
+}
+
+.features li {
+    padding: 0.2rem 0;
+}
+
+.features li b {
+    color: green;
+    padding-right: .3rem;
+}
+
+.benefits {
+    padding: .5rem 0;
+}
+
+.benefits ul {
+    padding: 0.5rem 0;
+}
+
+.benefits li {
+    padding: 0.2rem 0;
+}
+
+.benefits li b {
+    color: green;
+    padding-right: .3rem;
+}
+
+@media (max-width:720px) {
+    .security {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}
